@@ -1,5 +1,5 @@
 <?php
-namespace bitWeb;
+namespace easylib\easycache;
 class easycache
 {
 	private $cache = false;
