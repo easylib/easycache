@@ -5,8 +5,7 @@ class easycache
 	private $cache = false;
 	public function __construct()
 	{
-		$c = new config();
-		if (function_exists('apc_add')&&$c->get("caching"))
+		if (function_exists('apc_add'))
 		{
 			$this->cache=true;
 		}
