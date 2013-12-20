@@ -10,6 +10,10 @@ class easycache
 			$this->cache=true;
 		}
 	}
+	public function disabled()
+	{
+		$this->cache = false;
+	}
 	public function add($key, $value, $ttl = 120)
 	{
 		if($this->cache)
